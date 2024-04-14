@@ -14,12 +14,10 @@ export default function Navigation() {
 					{path === "/" ? "🔥" : ""}
 				</li>
 				<li>
-					<Link href="/about-us">About-Us!</Link>
+					<Link href="/about-us">About-Us</Link>
 					{path === "/about-us" ? "🔥" : ""}
 				</li>
 			</ul>
 		</nav>
 	);
 }
-
-// about-us ---> Boring HTML ---> :) ---> init(Boring HTML)
