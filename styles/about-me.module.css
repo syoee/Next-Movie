@@ -1,0 +1,41 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.img {
+	border-radius: 20px;
+	max-width: 70%;
+	place-self: center;
+}
+
+.title {
+	color: white;
+	font-size: 36px;
+	font-weight: 700;
+	padding: 10% 0;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.info p {
+	font-weight: 700;
+	padding-bottom: 3%;
+}
+
+.info a {
+	transform: none;
+	transition: all 0.1s ease-in-out;
+}
+
+.info a:hover {
+	transform: scale(1.05);
+	font-weight: 500;
+}
