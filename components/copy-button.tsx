@@ -1,6 +1,6 @@
 import React from "react";
 
-const CopyButton = (text: string) => {
+const CopyButton = (text: any) => {
 	const copyToClipboard = async () => {
 		try {
 			await navigator.clipboard.writeText(text);
