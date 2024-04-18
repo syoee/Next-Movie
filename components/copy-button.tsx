@@ -1,15 +1,16 @@
-import React from "react";
+"use client";
 
-const CopyButton = (text: string) => {
-	const copyToClipboard = async () => {
-		try {
-			await navigator.clipboard.writeText(text);
-		} catch (err) {
-			console.error("텍스트를 클립보드에 복사하는데 실패했습니다.", err);
-		}
-	};
+export const copyToClipboard = async (text: string) => {
+	try {
+		await navigator.clipboard.writeText(text);
+		alert("클립보드에 복사되었습니다.");
+	} catch (err) {
+		console.error("텍스트를 클립보드에 복사하는데 실패했습니다.", err);
+	}
+};
 
-	return <button onClick={copyToClipboard}>{text}</button>;
+const CopyButton = ({ text }: { text: string }) => {
+	return <button onClick={() => copyToClipboard(text)}>{text}</button>;
 };
 
 export default CopyButton;
