@@ -1,0 +1,10 @@
+.button {
+	color: white;
+	background-color: black;
+	box-shadow: none;
+}
+
+.button:hover {
+	color: red;
+	cursor: pointer;
+}

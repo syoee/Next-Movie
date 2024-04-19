@@ -1,5 +1,7 @@
 "use client";
 
+import clipboard from "../styles/copy-button.module.css";
+
 export const copyToClipboard = async (text: string) => {
 	try {
 		await navigator.clipboard.writeText(text);
@@ -10,7 +12,11 @@ export const copyToClipboard = async (text: string) => {
 };
 
 const CopyButton = ({ text }: { text: string }) => {
-	return <button onClick={() => copyToClipboard(text)}>{text}</button>;
+	return (
+		<button className={clipboard.button} onClick={() => copyToClipboard(text)}>
+			{text}
+		</button>
+	);
 };
 
 export default CopyButton;
