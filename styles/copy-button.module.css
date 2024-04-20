@@ -1,7 +1,5 @@
 .button {
-	color: white;
-	background-color: black;
-	box-shadow: none;
+	all: unset;
 }
 
 .button:hover {
