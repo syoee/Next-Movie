@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import MovieInfo, { getMovie } from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-videos";
+import MovieCast from "../../../../components/movie-cast";
 
 interface IParams {
 	params: { id: string };
@@ -18,6 +19,9 @@ export default async function MovieDetail({ params: { id } }: IParams) {
 		<div>
 			<Suspense>
 				<MovieInfo id={id} />
+			</Suspense>
+			<Suspense>
+				<MovieCast id={id} />
 			</Suspense>
 			<Suspense>
 				<MovieVideos id={id} />
