@@ -32,10 +32,6 @@ export default function AboutMe() {
 						<p>📧 E-mail</p>
 						<CopyButton text="seonyong717@gmail.com" />
 					</li>
-					<li>
-						<p>📱 Phone</p>
-						<CopyButton text="010-4626-8580" />
-					</li>
 				</ul>
 			</div>
 		</div>
