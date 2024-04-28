@@ -1,3 +1,19 @@
 .container {
-	color: red;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content img {
+	border-radius: 10px;
+}
+
+.content div {
+	padding-top: 10px;
 }
