@@ -52,10 +52,10 @@ const MovieCast = async ({ id }: { id: string }) => {
 	return (
 		<div className={human.container}>
 			<Slider {...settings}>
-				{credits.map((credits) => (
-					<div className={human.content}>
-						<img src={credits.profile_path} alt={credits.original_name} />
-						<div>{credits.name}</div>
+				{credits.map((credit, index) => (
+					<div key={index} className={human.content}>
+						<img src={credit.profile_path} alt={credit.original_name} />
+						<div>{credit.name}</div>
 					</div>
 				))}
 			</Slider>
