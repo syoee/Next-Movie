@@ -6,7 +6,8 @@
 }
 
 .content {
-	display: flex;
+	display: flex !important;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -16,5 +17,6 @@
 }
 
 .content div {
+	font-weight: 600;
 	padding-top: 10px;
 }
