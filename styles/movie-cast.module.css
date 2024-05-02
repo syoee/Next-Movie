@@ -5,6 +5,12 @@
 	margin-top: 100px;
 }
 
+.title {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
 .content {
 	display: flex !important;
 	flex-direction: column;
@@ -17,6 +23,6 @@
 }
 
 .content div {
-	font-weight: 700;
+	font-weight: 600;
 	padding-top: 10px;
 }

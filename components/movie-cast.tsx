@@ -51,6 +51,7 @@ const MovieCast = async ({ id }: { id: string }) => {
 	const credits = await getCredits(id);
 	return (
 		<div className={human.container}>
+			<div className={human.title}>Cast</div>
 			<Slider {...settings}>
 				{credits.map((credit, index) => (
 					<div key={index} className={human.content}>
