@@ -6,6 +6,7 @@
 }
 
 .title {
+	max-width: 80%;
 	font-size: 36px;
 	font-weight: 600;
 	margin-bottom: 50px;
