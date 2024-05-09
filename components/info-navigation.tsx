@@ -15,7 +15,7 @@ const MovieInfo = async ({ id }: { id: string }) => {
 				<h3>⭐️{movie.vote_average.toFixed(1)}</h3>
 				<p>{movie.overview}</p>
 				<a href={movie.homepage} target={"_blank"}>
-					&rarr; HomePage
+					&rarr; Test
 				</a>
 			</div>
 		</div>
