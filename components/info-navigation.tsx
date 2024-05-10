@@ -1,25 +1,23 @@
-import { API_URL } from "../app/constants";
+"use client";
 
-export async function getMovie(id: string) {
-	const response = await fetch(`${API_URL}/${id}`);
-	return response.json();
-}
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import styles from "../styles/navigation.module.css";
 
-const MovieInfo = async ({ id }: { id: string }) => {
-	const movie = await getMovie(id);
+export default function Navigation() {
+	const path = usePathname();
 	return (
-		<div>
-			<img src={movie.poster_path} alt={movie.title} />
-			<div>
-				<h1>{movie.title}</h1>
-				<h3>⭐️{movie.vote_average.toFixed(1)}</h3>
-				<p>{movie.overview}</p>
-				<a href={movie.homepage} target={"_blank"}>
-					&rarr; Test
-				</a>
-			</div>
-		</div>
+		<nav className={styles.nav}>
+			<ul>
+				<li>
+					<Link href="/">Home</Link>
+					{path === "/" ? "🔥" : ""}
+				</li>
+				<li>
+					<Link href="/about-me">About Me</Link>
+					{path === "/about-me" ? "🔥" : ""}
+				</li>
+			</ul>
+		</nav>
 	);
-};
-
-export default MovieInfo;
+}
