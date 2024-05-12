@@ -14,7 +14,7 @@ export default function Navigation() {
 					{path === "/" ? "🔥" : ""}
 				</li>
 				<li>
-					<Link href="/about-me">Cast</Link>
+					<Link href="/about-me">Profile</Link>
 					{path === "/about-me" ? "🔥" : ""}
 				</li>
 			</ul>
