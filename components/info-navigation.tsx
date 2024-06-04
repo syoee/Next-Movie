@@ -13,7 +13,7 @@ export default function Navigation() {
 					<div>test1</div>
 				</li>
 				<li>
-					<div>test2</div>
+					<div>test3</div>
 				</li>
 			</ul>
 		</nav>
